@@ -43,4 +43,4 @@ module load anaconda				### load anaconda module (must present when working with
 module load cuda/11.4
 source activate iritenv				### activating environment, environment must be configured before running the job
 ###~/.conda/envs/iritenv/bin/python main.py --config configs/ve/cifar10_ncsnpp_deep_continuous.py --workdir output/ --eval_folder output/eval_folder/ --mode train
-~/.conda/envs/iritenv/bin/python main.py --config configs/ve/fashionmnist_ddpm.py --workdir output/ --eval_folder output/eval_folder/ --mode train
+~/.conda/envs/iritenv/bin/python main.py --config configs/ve/cifar10_ddpm.py --workdir output/ --eval_folder output/eval_folder/ --mode train
