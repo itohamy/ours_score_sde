@@ -1,0 +1,30 @@
+WARNING:tensorflow:From /vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/tensorflow_gan/python/estimator/tpu_gan_estimator.py:42: The name tf.estimator.tpu.TPUEstimator is deprecated. Please use tf.compat.v1.estimator.tpu.TPUEstimator instead.
+
+Traceback (most recent call last):
+  File "/vilsrv-storage/tohamy/BNP/SDE/ours_score_sde/main.py", line 62, in <module>
+    app.run(main)
+  File "/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/absl/app.py", line 312, in run
+    _run_main(main, args)
+  File "/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/absl/app.py", line 258, in _run_main
+    sys.exit(main(argv))
+  File "/vilsrv-storage/tohamy/BNP/SDE/ours_score_sde/main.py", line 53, in main
+    run_lib.train(FLAGS.config, FLAGS.workdir)
+  File "/vilsrv-storage/tohamy/BNP/SDE/ours_score_sde/run_lib.py", line 68, in train
+    score_model = mutils.create_model(config)
+  File "/vilsrv-storage/tohamy/BNP/SDE/ours_score_sde/models/utils.py", line 93, in create_model
+    score_model = score_model.to(config.device)
+  File "/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/torch/nn/modules/module.py", line 852, in to
+    return self._apply(convert)
+  File "/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/torch/nn/modules/module.py", line 530, in _apply
+    module._apply(fn)
+  File "/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/torch/nn/modules/module.py", line 530, in _apply
+    module._apply(fn)
+  File "/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/torch/nn/modules/module.py", line 530, in _apply
+    module._apply(fn)
+  File "/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/torch/nn/modules/module.py", line 552, in _apply
+    param_applied = fn(param)
+  File "/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/torch/nn/modules/module.py", line 850, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.

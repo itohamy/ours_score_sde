@@ -1,0 +1,30 @@
+# Compiled python modules.
+*.pyc
+
+# Byte-compiled
+_pycache__/
+.cache/
+.idea/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+.eggs/
+
+# PyPI distribution artifacts.
+build/
+dist/
+
+output_fashionmnist/
+output/
+output_cifar/
+output_cifar10_ddpm/
+output*/
+output_cifar10_ncsnpp_cont_with_our_loss/
+output_fashionmnist_ncsnpp_cont/
+
+
+# Tests
+.pytest_cache/
+
+# Other
+*.DS_Store

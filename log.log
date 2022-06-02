@@ -1,0 +1,14 @@
+/opt/rh/devtoolset-9/root/usr/bin/gcc
+gcc (GCC) 9.3.1 20200408 (Red Hat 9.3.1-2)
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Sun May 22 11:13:35 IDT 2022
+
+SLURM_JOBID:		 299245
+SLURM_JOB_NODELIST:	 dt-gpu-04 
+
+
+WARNING:tensorflow:From /home/tohamy/.conda/envs/iritenv/lib/python3.10/site-packages/tensorflow_gan/python/estimator/tpu_gan_estimator.py:42: The name tf.estimator.tpu.TPUEstimator is deprecated. Please use tf.compat.v1.estimator.tpu.TPUEstimator instead.
+
